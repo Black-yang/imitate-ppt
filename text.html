@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./css/text.css">
+    <script src="./js/text.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <label for="img1" class="active">第一张</label>
+            <label for="img2">第二张</label>
+            <label for="img3">第三张</label>
+            <p>+</p>
+        </div>
+        <div class="middle">
+            <ul>
+                <li>
+                    <input type="radio" name='img' id='img1' checked>
+                    <p>空白演示1
+                        <input type="text" placeholder="1在此输入您的封面副标题">
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name='img' id='img2'>
+                    <p>空白演示2
+                        <input type="text" placeholder="2在此输入您的封面副标题">
+                    </p>
+                </li>
+                <li>
+                    <input type="radio" name='img' id='img3'>
+                    <p>空白演示3
+                        <input type="text" placeholder="3在此输入您的封面副标题">
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="./img/delete.png" alt="" class="close">
+            <div class="rightTop">
+                <p>对象属性</p>
+                <h5>填充</h5>
+            </div>
+            <div class='rightBottom'>
+                <h5>填充</h5>
+                <select name="" id="">
+                    <option value="蓝色">蓝色</option>
+                    <option value="黄色">黄色</option>
+                </select>
+                
+            </div>
+            <input type="radio" id="abc" checked>纯色填充
+        </div>
+        <div class='control'>
+            <span class="controlReduce">-</span>
+            <span class='controlAdd'>+</span>
+        </div>
+    </div>
+</body>
+
+</html>

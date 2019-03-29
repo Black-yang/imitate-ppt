@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 1000px;
+  height: 550px;
+  background-color: #ccc;
+  margin: 20px auto;
+  padding: 15px 15px;
+  display: flex;
+  position: relative;
+}
+.container .left {
+  width: 10%;
+  height: 96%;
+  padding: 0 10px;
+  position: relative;
+}
+.container .left label {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+.container .left .active {
+  border: 1px solid red;
+}
+.container .left p {
+  font-size: 24px;
+  position: absolute;
+  bottom: -26px;
+  left: 30%;
+}
+.container .middle {
+  box-shadow: 1px 2px 3px 4px #ccc inset;
+  width: 70%;
+  height: 96%;
+  background-color: rgba(0, 174, 255, 0.432);
+  position: relative;
+  margin: 0 5px;
+}
+.container .middle ul {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .middle ul input:checked + p {
+  display: block;
+}
+.container .middle ul input[type=radio] {
+  position: absolute;
+  left: -99999px;
+}
+.container .middle ul p {
+  padding: 5px;
+  display: none;
+  text-align: center;
+  font-weight: normal;
+  font-size: 23px;
+  text-shadow: 1px 1px 2px #000;
+}
+.container .middle ul input[type=text] {
+  height: 40px;
+  outline: none;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+}
+.container .middle ul input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  font-size: 16px;
+}
+.container .right {
+  position: relative;
+  width: 20%;
+  height: 94%;
+  background-color: #fff;
+  padding: 5px 5px;
+}
+.container .right img {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.container .right .rightTop {
+  border-bottom: 1px solid #ccc;
+}
+.container .right .rightTop p {
+  font-size: 16px;
+}
+.container .right h5 {
+  color: red;
+  margin-top: 20px;
+  font-size: 16px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.container .right .rightBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container .right .rightBottom select {
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
+.container .right input[type=radio] {
+  margin-top: 10px;
+}
+.container .control {
+  width: 14%;
+  font-size: 24px;
+  position: absolute;
+  bottom: 8px;
+  right: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .control span {
+  cursor: pointer;
+}
